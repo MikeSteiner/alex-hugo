@@ -1,0 +1,17 @@
+{{ $sectionName := "skills" }}
+{{ $currentPage := (.Site.GetPage $sectionName) }}
+
+<!--Title-->
+<div class="section-head mb-4">
+    <h3 class="bottom-border">{{ $currentPage.Title | safeHTML }}</h3>
+</div>
+
+<!--Data-->
+<section class="d-flex flex-column">
+    {{ $sectionGroup := (.Site.Params.skills) }}
+    {{ range $sectionGroup }}
+        <div>
+            {{ . }}
+        </div>
+    {{ end }}
+</section>

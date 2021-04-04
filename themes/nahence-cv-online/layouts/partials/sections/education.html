@@ -11,9 +11,8 @@
     {{ $sectionPages := (where .Site.RegularPages.ByTitle "Section" $sectionName) }}
     {{ $sortBy := ".Params.weight" }}
 
-    {{ range sort $sectionPages $sortBy "asc" }}
-
     <div class="mx-1 education-list-container">
+    {{ range sort $sectionPages $sortBy "asc" }}
         <div class="education-card">
             <div>
                 <h4>{{ .Title }}</h4>
@@ -39,7 +38,7 @@
                 </div>
             </div>
         </div>
-    </div>
-
+        <hr>
     {{ end }}
+    </div>
 </section>

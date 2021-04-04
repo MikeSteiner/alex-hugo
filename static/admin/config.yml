@@ -108,8 +108,21 @@ collections:
           - { label: "Image", name: "image", widget: "image", required: true }
           - { label: "Name", name: "alt", widget: "string", required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
-    # Work Experience Section
-    # Skills Section
+  # Work Experience Section
+  # Skills Section
+  - label: "Skills Section"
+    name: "skills"
+    folder: 'content/skills'
+    file: "content/skills/index.md"
+    create: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - label: 'Skill Groups'
+        name: 'skillGroups'
+        widget: 'list'
+        fields:
+          - { label: "Skill", name: "skill", widget: "list", required: true }
+
     # language Skills Section
     # Personal Projects Section
     # Achievements Section
