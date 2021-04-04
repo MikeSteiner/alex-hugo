@@ -25,7 +25,7 @@ address:
   city: Sofia
 period:
   startDate: "2016"
-  endDate: "2017"
+  endDate: ""
 avatarImage:
   image: telerik-academy-10yr.svg
   alt: Telerik Academy Logo

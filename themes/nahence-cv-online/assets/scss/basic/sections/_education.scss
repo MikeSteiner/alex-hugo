@@ -2,7 +2,19 @@
 # Education Section
 --------------------------------------------------------------*/
 #education {
+  .education-list-container {
+    hr {
+      border-top: 1px dashed darkgray;
+    }
+    &:last-child hr {
+      display: none;
+    }
+  }
+
   .education-card {
+    img {
+      width: 80%;
+    }
 
     h4 {
       color: #1b242f;
@@ -12,10 +24,6 @@
     h5 {
       color: #00a78e;
       font-weight: 600;
-    }
-
-    img {
-      width: 80%;
     }
   }
 }
