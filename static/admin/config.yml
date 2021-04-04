@@ -15,52 +15,16 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Weight', name: 'weight', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
-      - file: "content/personal-data/index.md"
-        label: "Personal Data Page"
-        name: "personal-data"
-        fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Full Name', name: 'fullName', widget: 'string' }
-          - { label: 'Job Role', name: 'jobRole', widget: 'string' }
-          - { label: 'Linkedin', name: 'linkedin', widget: 'string' }
-          - label: 'AvatarImage'
-            name: 'avatarImage'
-            widget: 'object'
-            fields:
-              - { label: "Image", name: "image", widget: "image", required: true }
-              - { label: "Name", name: "alt", widget: "string", required: false }
-          - label: Address
-            name: address
-            widget: object
-            fields:
-              - { label: "Label", name: "label", widget: "string", required: true}
-              - { label: "Street 1", name: "street1", widget: "string", required: true}
-              - { label: "Street 2", name: "street2", widget: "string", required: false}
-              - { label: "Postcode", name: "postcode", widget: "string", required: false}
-              - { label: "City", name: "city", widget: "string", required: false}
-              - { label: "Country", name: "country", widget: "string", required: false}
-          - label: Phone
-            name: phone
-            widget: object
-            fields:
-              - { label: "Label", name: "label", widget: "string", required: true}
-              - { label: "Number", name: "number", widget: "string", required: true}
-              - { label: "Human Readable Number", name: "humanReadableNumber", widget: "string", required: true}
-          - label: Email
-            name: email
-            widget: object
-            fields:
-              - { label: "Label", name: "label", widget: "string", required: true}
-              - { label: "Email", name: "email", widget: "string", required: true}
-      # Footer page
+      # Footer
       - file: "content/footer/_index.md"
-        label: "Footer Page"
+        label: "Footer"
         name: "footer"
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'sections'
     label: 'Sections'
+    folder: 'content'
     files:
       # Personal Data
       - file: "content/personal-data/index.md"
@@ -100,11 +64,57 @@ collections:
             fields:
               - { label: "Label", name: "label", widget: "string", required: true}
               - { label: "Email", name: "email", widget: "string", required: true}
-      # Footer page
-      - file: "content/footer/_index.md"
-        label: "Footer Section"
-        name: "footer"
+      # Education Section
+      - name: 'education'
+        label: 'Education'
+        label_singular: 'Education'
+        create: true
+        folder: 'content/education'
+        path: '{{slug}}/index'
+        file: 'content/{{slug}}/index'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Title', name: 'title', widget: 'string', required: true }
+#          - { label: 'Summary', name: 'summary', widget: 'string' }
+#          - { label: 'Weight', name: 'weight', widget: 'number', value_type: "int" }
+#          - { label: 'specialty', name: 'specialty', widget: 'string' }
+#          - { label: 'degree', name: 'degree', widget: 'string' }
+#          - { label: 'Field Of Study', name: 'fieldOfStudy', widget: 'list', add_to_top: true }
+#          - { label: 'Website', name: 'website', widget: 'string' }
+#          - label: Address
+#            name: address
+#            widget: object
+#            fields:
+#              - { label: "Label", name: "label", widget: "string", required: false}
+#              - { label: "Street 1", name: "street1", widget: "string", required: false}
+#              - { label: "Street 2", name: "street2", widget: "string", required: false}
+#              - { label: "Postcode", name: "postcode", widget: "string", required: false}
+#              - { label: "City", name: "city", widget: "string", required: false}
+#              - { label: "Country", name: "country", widget: "string", required: true}
+#          - label: Period
+#            name: period
+#            widget: object
+#            fields:
+#              - { label: "Start Date", name: "startDate", widget: "string", required: true}
+#              - { label: "End Date", name: "endDate", widget: "string", required: false}
+#          - label: 'AvatarImage'
+#            name: 'avatarImage'
+#            widget: 'object'
+#            fields:
+#              - { label: "Image", name: "image", widget: "image", required: true }
+#              - { label: "Name", name: "alt", widget: "string", required: false }
+#          - label: External
+#            name: external
+#            widget: list
+#            fields:
+#              - { label: "label", name: "label", widget: "string", required: true}
+#              - { label: "url", name: "url", widget: "string", required: true}
+#          - { label: 'Body', name: 'body', widget: 'markdown' }
+      # Work Experience Section
+      # Skills Section
+      # language Skills Section
+      # Personal Projects Section
+      # Achievements Section
+      # Passions Section
+      # Books Section
+
 
