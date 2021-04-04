@@ -3,3 +3,10 @@ languageCode = "en-us"
 title = "Alexander Online Resume"
 
 theme = ["nahence-cv-online"]
+
+# Logo
+[params.logo]
+    src = "images/uploads/logo.png"
+    alt = "Alexander Personal Resume"
+    favicon = "images/uploads/favicon.png"
+    appleTouchIcon = "images/uploads/apple-touch-icon.png"
