@@ -70,7 +70,7 @@ collections:
     create: true
     folder: 'content/education'
     path: '{{slug}}/index'
-    file: 'content/{{slug}}/index'
+#    file: 'content/{{slug}}/index'
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Summary', name: 'summary', widget: 'string' }
