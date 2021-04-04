@@ -6,6 +6,20 @@ weight: 0
 specialty: IT
 degree: C# and Front-end
 website: https://www.telerikacademy.com/
+fieldOfStudy:
+  - label: Object-oriented programming (OOP)
+  - label: High quality code
+  - label: Unit testing
+  - label: Software engineer
+  - label: Javascript
+  - label: C#
+  - label: HTML
+  - label: CSS
+  - label: Node.js
+  - label: Angular 2
+  - label: Data structures and algorithms
+  - label: ASP.NET MVC
+  - label: ASP.NET WebForms
 address:
   country: Bulgaria
   city: Sofia
