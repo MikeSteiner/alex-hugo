@@ -79,11 +79,11 @@ collections:
     public_folder: './'
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Summary', name: 'summary', widget: 'string' }
+      - { label: 'Summary', name: 'summary', widget: 'string', required: false }
       - { label: 'Weight', name: 'weight', widget: 'number', value_type: "int" }
       - { label: 'specialty', name: 'specialty', widget: 'string' }
       - { label: 'degree', name: 'degree', widget: 'string' }
-      - { label: 'Website', name: 'website', widget: 'string' }
+      - { label: 'Website', name: 'website', widget: 'string', required: false }
       - label: 'Field Of Study'
         name: 'fieldOfStudy'
         widget: 'list'

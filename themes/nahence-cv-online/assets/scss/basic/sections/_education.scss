@@ -6,16 +6,12 @@
     hr {
       border-top: 1px dashed darkgray;
     }
-    &:last-child hr {
+    hr:last-of-type {
       display: none;
     }
   }
 
   .education-card {
-    img {
-      width: 80%;
-    }
-
     h4 {
       color: #1b242f;
       font-weight: bold;
@@ -24,6 +20,10 @@
     h5 {
       color: #00a78e;
       font-weight: 600;
+    }
+
+    img {
+      width: 80%;
     }
   }
 }

@@ -1,7 +1,7 @@
 ---
 title: Technical University Sofia
 summary: Faculty for German Engineering and Industrial Management
-weight: 0
+weight: 3
 specialty: Business administration
 degree: Master
 website: https://tu-sofia.bg/

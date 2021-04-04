@@ -3,7 +3,7 @@ title: Software University
 summary: First software university in Bulgaria. Its idea to be the innovative
   and modern educational center, providing tru specialists for the modern IT
   world.
-weight: -1
+weight: 2
 specialty: IT
 degree: C#
 website: https://softuni.bg
