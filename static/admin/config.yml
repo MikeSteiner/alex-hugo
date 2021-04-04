@@ -28,6 +28,7 @@ collections:
     name: "personal-data"
     folder: 'content/personal-data'
     file: "content/personal-data/index.md"
+    create: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Full Name', name: 'fullName', widget: 'string' }
@@ -62,19 +63,19 @@ collections:
         fields:
           - { label: "Label", name: "label", widget: "string", required: true}
           - { label: "Email", name: "email", widget: "string", required: true}
-    # Education Section
-#    - name: 'education'
-#      label: 'Education'
-#      label_singular: 'Education'
-#      create: true
-#      folder: 'content/education'
-#      path: '{{slug}}/index'
-#      file: 'content/{{slug}}/index'
-#      fields:
-#        - { label: 'Title', name: 'title', widget: 'string', required: true }
-#          - { label: 'Summary', name: 'summary', widget: 'string' }
-#          - { label: 'Weight', name: 'weight', widget: 'number', value_type: "int" }
-#          - { label: 'specialty', name: 'specialty', widget: 'string' }
+  # Education Section
+  - name: 'education'
+    label: 'Education'
+    label_singular: 'Education'
+    create: true
+    folder: 'content/education'
+    path: '{{slug}}/index'
+    file: 'content/{{slug}}/index'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Summary', name: 'summary', widget: 'string' }
+      - { label: 'Weight', name: 'weight', widget: 'number', value_type: "int" }
+      - { label: 'specialty', name: 'specialty', widget: 'string' }
 #          - { label: 'degree', name: 'degree', widget: 'string' }
 #          - { label: 'Field Of Study', name: 'fieldOfStudy', widget: 'list', add_to_top: true }
 #          - { label: 'Website', name: 'website', widget: 'string' }
