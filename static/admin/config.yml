@@ -78,8 +78,13 @@ collections:
       - { label: 'Weight', name: 'weight', widget: 'number', value_type: "int" }
       - { label: 'specialty', name: 'specialty', widget: 'string' }
       - { label: 'degree', name: 'degree', widget: 'string' }
-      - { label: 'Field Of Study', name: 'fieldOfStudy', widget: 'list', add_to_top: true }
       - { label: 'Website', name: 'website', widget: 'string' }
+      - label: 'Field Of Study'
+        name: 'fieldOfStudy'
+        widget: 'list'
+        required: false
+        fields:
+          - { label: "Label", name: "label", widget: "string", required: false}
       - label: Address
         name: address
         widget: object

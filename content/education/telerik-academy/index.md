@@ -18,7 +18,7 @@ fieldOfStudy:
   - Angular 2
   - Data structures and algorithms
   - ASP.NET MVC
-  - ASP
+  - ASP.NET WebForms
 website: https://www.telerikacademy.com/
 address:
   country: Bulgaria
