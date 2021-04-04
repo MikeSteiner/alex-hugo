@@ -4,7 +4,7 @@ fullName: Alexander Toplijski
 jobRole: Frontend Angular Developer at Schwarz IT Bulgaria
 linkedin: https://www.linkedin.com/in/alexander-toplijski-8b418b108/
 avatarImage:
-  image: /images/uploads/neg91-logo.png
+  image: /images/uploads/alexander-toplijski-main-image.jpg
   alt: Alexander Toplijski
 address:
   label: Address

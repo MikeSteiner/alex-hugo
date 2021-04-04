@@ -15,9 +15,56 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Weight', name: 'weight', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
-      # Personal Data
       - file: "content/personal-data/index.md"
         label: "Personal Data Page"
+        name: "personal-data"
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Full Name', name: 'fullName', widget: 'string' }
+          - { label: 'Job Role', name: 'jobRole', widget: 'string' }
+          - { label: 'Linkedin', name: 'linkedin', widget: 'string' }
+          - label: 'AvatarImage'
+            name: 'avatarImage'
+            widget: 'object'
+            fields:
+              - { label: "Image", name: "image", widget: "image", required: true }
+              - { label: "Name", name: "alt", widget: "string", required: false }
+          - label: Address
+            name: address
+            widget: object
+            fields:
+              - { label: "Label", name: "label", widget: "string", required: true}
+              - { label: "Street 1", name: "street1", widget: "string", required: true}
+              - { label: "Street 2", name: "street2", widget: "string", required: false}
+              - { label: "Postcode", name: "postcode", widget: "string", required: false}
+              - { label: "City", name: "city", widget: "string", required: false}
+              - { label: "Country", name: "country", widget: "string", required: false}
+          - label: Phone
+            name: phone
+            widget: object
+            fields:
+              - { label: "Label", name: "label", widget: "string", required: true}
+              - { label: "Number", name: "number", widget: "string", required: true}
+              - { label: "Human Readable Number", name: "humanReadableNumber", widget: "string", required: true}
+          - label: Email
+            name: email
+            widget: object
+            fields:
+              - { label: "Label", name: "label", widget: "string", required: true}
+              - { label: "Email", name: "email", widget: "string", required: true}
+      # Footer page
+      - file: "content/footer/_index.md"
+        label: "Footer Page"
+        name: "footer"
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'sections'
+    label: 'Sections'
+    files:
+      # Personal Data
+      - file: "content/personal-data/index.md"
+        label: "Personal Data Section"
         name: "personal-data"
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }

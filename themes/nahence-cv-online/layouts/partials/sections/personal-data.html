@@ -39,8 +39,7 @@
     </div>
 
     <!-- Picture-->
-    <!-- <img src="images/uploads/alexander-toplijski-main-image.jpg">-->
     {{ with $currentPage.Params.avatarImage }}
-    <img src="{{ .image }}" alt="{{ .alt }}">
+        <img src="{{ .image }}" alt="{{ .alt }}">
     {{ end }}
 </section>
