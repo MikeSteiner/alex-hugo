@@ -17,17 +17,17 @@
             <div class="col-5">
                 <div>
                     <i class="fa fa-phone"></i>
-                    <span>{{ $currentPage.Params.phone }}</span>
+                    <span>{{ $currentPage.Params.phone.humanReadableNumber }}</span>
                 </div>
                 <div>
                     <i class="fa fa-address-book"></i>
-                    <span>{{ $currentPage.Params.email }}</span>
+                    <span>{{ $currentPage.Params.email.email }}</span>
                 </div></div>
             <div class="col-7">
                 <div>
                     <i class="fa fa-location-arrow"></i>
-                    {{ with $currentPage.Params.location }}
-                        <span>{{ .country }}, {{ .city }}, {{ .street1 }}, {{ .postCode }}</span>
+                    {{ with $currentPage.Params.address }}
+                        <span>{{ .country }}, {{ .city }}, {{ .street1 }} {{ .street2 }}, {{ .postCode }}</span>
                     {{ end }}
                 </div>
                 <div>
@@ -40,6 +40,7 @@
 
     <!-- Picture-->
     <!-- <img src="images/uploads/alexander-toplijski-main-image.jpg">-->
-    <img src="{{ $currentPage.Params.image }}" alt="{{ $currentPage.Params.fullName }}">
-
+    {{ with $currentPage.Params.avatarImage }}
+    <img src="{{ .image }}" alt="{{ .alt }}">
+    {{ end }}
 </section>
