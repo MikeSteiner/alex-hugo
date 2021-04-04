@@ -7,6 +7,7 @@ collections:
   - name: 'pages'
     label: 'Pages'
     files:
+      ###########################################################################
       # Home page
       - file: "content/_index.md"
         label: "Home Page"
@@ -15,6 +16,7 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Weight', name: 'weight', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+      ###########################################################################
       # Footer
       - file: "content/footer/_index.md"
         label: "Footer"
@@ -23,6 +25,7 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
+  ###########################################################################
   # Personal Data
   - label: "Personal Data Section"
     name: "personal-data"
@@ -63,6 +66,8 @@ collections:
         fields:
           - { label: "Label", name: "label", widget: "string", required: true}
           - { label: "Email", name: "email", widget: "string", required: true}
+
+  ###########################################################################
   # Education Section
   - name: 'education'
     label: 'Education'
@@ -108,7 +113,11 @@ collections:
           - { label: "Image", name: "image", widget: "image", required: true }
           - { label: "Name", name: "alt", widget: "string", required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
+
+  ###########################################################################
   # Work Experience Section
+
+  ###########################################################################
   # Skills Section
   - label: "Skills Section"
     name: "skills"
@@ -121,12 +130,22 @@ collections:
         name: 'skillGroups'
         widget: 'list'
         fields:
-          - { label: "Skill", name: "skill", widget: "list", required: true }
+          - { label: "Label", name: "label", widget: "string", required: true }
+          - { label: "Skills", name: "skills", widget: "list", required: true }
 
+    ###########################################################################
     # language Skills Section
+
+    ###########################################################################
     # Personal Projects Section
+
+    ###########################################################################
     # Achievements Section
+
+    ###########################################################################
     # Passions Section
+
+    ###########################################################################
     # Books Section
 
 
