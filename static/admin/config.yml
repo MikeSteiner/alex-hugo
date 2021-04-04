@@ -76,38 +76,38 @@ collections:
       - { label: 'Summary', name: 'summary', widget: 'string' }
       - { label: 'Weight', name: 'weight', widget: 'number', value_type: "int" }
       - { label: 'specialty', name: 'specialty', widget: 'string' }
-#          - { label: 'degree', name: 'degree', widget: 'string' }
-#          - { label: 'Field Of Study', name: 'fieldOfStudy', widget: 'list', add_to_top: true }
-#          - { label: 'Website', name: 'website', widget: 'string' }
-#          - label: Address
-#            name: address
-#            widget: object
-#            fields:
-#              - { label: "Label", name: "label", widget: "string", required: false}
-#              - { label: "Street 1", name: "street1", widget: "string", required: false}
-#              - { label: "Street 2", name: "street2", widget: "string", required: false}
-#              - { label: "Postcode", name: "postcode", widget: "string", required: false}
-#              - { label: "City", name: "city", widget: "string", required: false}
-#              - { label: "Country", name: "country", widget: "string", required: true}
-#          - label: Period
-#            name: period
-#            widget: object
-#            fields:
-#              - { label: "Start Date", name: "startDate", widget: "string", required: true}
-#              - { label: "End Date", name: "endDate", widget: "string", required: false}
-#          - label: 'AvatarImage'
-#            name: 'avatarImage'
-#            widget: 'object'
-#            fields:
-#              - { label: "Image", name: "image", widget: "image", required: true }
-#              - { label: "Name", name: "alt", widget: "string", required: false }
-#          - label: External
-#            name: external
-#            widget: list
-#            fields:
-#              - { label: "label", name: "label", widget: "string", required: true}
-#              - { label: "url", name: "url", widget: "string", required: true}
-#          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'degree', name: 'degree', widget: 'string' }
+      - { label: 'Field Of Study', name: 'fieldOfStudy', widget: 'list', add_to_top: true }
+      - { label: 'Website', name: 'website', widget: 'string' }
+      - label: Address
+        name: address
+        widget: object
+        fields:
+          - { label: "Label", name: "label", widget: "string", required: false}
+          - { label: "Street 1", name: "street1", widget: "string", required: false}
+          - { label: "Street 2", name: "street2", widget: "string", required: false}
+          - { label: "Postcode", name: "postcode", widget: "string", required: false}
+          - { label: "City", name: "city", widget: "string", required: false}
+          - { label: "Country", name: "country", widget: "string", required: true}
+      - label: Period
+        name: period
+        widget: object
+        fields:
+          - { label: "Start Date", name: "startDate", widget: "string", required: true}
+          - { label: "End Date", name: "endDate", widget: "string", required: false}
+      - label: 'AvatarImage'
+        name: 'avatarImage'
+        widget: 'object'
+        fields:
+          - { label: "Image", name: "image", widget: "image", required: true }
+          - { label: "Name", name: "alt", widget: "string", required: false }
+      - label: External
+        name: external
+        widget: list
+        fields:
+          - { label: "label", name: "label", widget: "string", required: true}
+          - { label: "url", name: "url", widget: "string", required: true}
+      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
     # Work Experience Section
     # Skills Section
     # language Skills Section
