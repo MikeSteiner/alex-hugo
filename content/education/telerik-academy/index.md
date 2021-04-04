@@ -9,6 +9,16 @@ fieldOfStudy:
   - Object-oriented programming (OOP)
   - High quality code
   - Unit testing
+  - Software engineer
+  - Javascript
+  - C#
+  - HTML
+  - CSS
+  - Node.js
+  - Angular 2
+  - Data structures and algorithms
+  - ASP.NET MVC
+  - ASP
 website: https://www.telerikacademy.com/
 address:
   country: Bulgaria
@@ -18,5 +28,6 @@ period:
   endDate: "2017"
 avatarImage:
   image: telerik-academy-10yr.svg
+  alt: Telerik Academy Logo
 external: []
 ---
