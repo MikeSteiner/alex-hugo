@@ -1,17 +1,15 @@
 /*--------------------------------------------------------------
-# Personal Data Section
+# Achievement Data Section
 --------------------------------------------------------------*/
-#personal-data {
-  section {
+#achievement {
+  .achievement-card {
     h4 {
       color: #1b242f;
-      font-size: 1.2em;
-      font-weight: 600;
-    }
-
-    img {
-      width: 9rem;
+      //font-size: 1.2em;
+      //font-weight: 600;
+      i {
+        color: #00a78e;
+      }
     }
   }
 }
-

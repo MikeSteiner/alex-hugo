@@ -1,27 +1,45 @@
-<div class="container" data-aos="fade-up">
+{{ $sectionName := "personal-data" }}
+{{ $currentPage := (.Site.GetPage $sectionName) }}
 
-    {{ $sectionName := "about" }}
-    {{ $currentPage := (.Site.GetPage $sectionName) }}
-
-    <div class="row">
-        <div class="col-lg-6">
-            <h2>{{ $currentPage.Title }}</h2>
-            <h4>{{ $currentPage.Summary }}</h4>
-            <p>{{ $currentPage.Content }}</p>
-        </div>
-
-        {{ with $currentPage.Params.where }}
-            <div class="col-lg-3">
-                <h3>{{ .title }}</h3>
-                <p>{{ .content }}</p>
-            </div>
-        {{ end }}
-
-        {{ with $currentPage.Params.when }}
-            <div class="col-lg-3">
-                <h3>{{ .title }}</h3>
-                <p>{{ replace .content "\\n" "<br/>" | safeHTML }}</p>
-            </div>
-        {{ end }}
-    </div>
+<!--Title-->
+<div class="section-head mb-4">
+    <h3 class="bottom-border">{{ $currentPage.Title | safeHTML }}</h3>
 </div>
+
+<!--Data-->
+<section class="d-flex justify-content-between">
+    <div class="flex-grow-1">
+        <div>
+            <h1>{{ $currentPage.Params.fullName }}</h1>
+            <h4>{{ $currentPage.Params.jobRole }}</h4>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>{{ $currentPage.Params.phone }}</span>
+                </div>
+                <div>
+                    <i class="fa fa-address-book"></i>
+                    <span>{{ $currentPage.Params.email }}</span>
+                </div></div>
+            <div class="col-7">
+                <div>
+                    <i class="fa fa-location-arrow"></i>
+                    {{ with $currentPage.Params.location }}
+                        <span>{{ .country }}, {{ .city }}, {{ .street1 }}, {{ .postCode }}</span>
+                    {{ end }}
+                </div>
+                <div>
+                    <i class="fab fa-linkedin"></i>
+                    <span>{{ $currentPage.Params.linkedin }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Picture-->
+    <!-- <img src="images/uploads/alexander-toplijski-main-image.jpg">-->
+    <img src="{{ $currentPage.Params.image }}" alt="{{ $currentPage.Params.fullName }}">
+
+</section>

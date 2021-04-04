@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.section-head {
+  
+  h3 {
+    color: #1b242f;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+
+    span {
+      font-weight: 700;
+      font-family: 'Asap', sans-serif;
+    }
+  }
+
+  .underline-green {
+    border-bottom: 3px solid #00a78e;
+    display: inline-block;
+  }
+
+  .bottom-border {
+    display: block;
+    min-width: 33%;
+    width: 44%;
+    border-bottom: 3px solid #00a78e;
+  }
+}

@@ -4,9 +4,13 @@
 @import "general";
 @import "header";
 @import "footer";
+@import "custom";
 
 /*--------------------------------------------------------------
 # Sections imports
 --------------------------------------------------------------*/
+@import "sections/achievement-card";
+@import "sections/education";
 @import "sections/personal-data";
-
+@import "sections/skills";
+@import "sections/work-experience";

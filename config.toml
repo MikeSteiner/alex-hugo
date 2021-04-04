@@ -10,3 +10,17 @@ theme = ["nahence-cv-online"]
     alt = "Alexander Personal Resume"
     favicon = "images/uploads/favicon.png"
     appleTouchIcon = "images/uploads/apple-touch-icon.png"
+
+# Module
+[module]
+  [[module.mounts]]
+  source = "static"
+  target = "static"
+
+  [[module.mounts]]
+  source = "node_modules/@fortawesome/fontawesome-free/webfonts"
+  target = "static/webfonts"
+
+  [[module.mounts]]
+  source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+  target = "assets/vendor/js/bootstrap.bundle.min.js"
