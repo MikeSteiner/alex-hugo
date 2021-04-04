@@ -31,7 +31,10 @@
                 <div class="">
                     <i class="fa fa-location-arrow"></i>
                     {{ with .Params.address }}
-                        <span>{{ .country }}, {{ .city }}</span>
+                        <span>
+                            {{ .country }}
+                            {{ if .city }}, {{ .city }}{{ end }}
+                        </span>
                     {{ end }}
                 </div>
             </div>

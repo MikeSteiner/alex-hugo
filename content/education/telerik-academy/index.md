@@ -24,8 +24,8 @@ address:
   country: Bulgaria
   city: Sofia
 period:
-  startDate: "2016"
-  endDate: ""
+  startDate: 2016
+  endDate: 2017
 avatarImage:
   image: telerik-academy-10yr.svg
   alt: Telerik Academy Logo
