@@ -1,0 +1,23 @@
+{
+  "name": "alex-resume-hugo",
+  "version": "1.0.0",
+  "description": "Alexander Online Resume",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "bootstrap": "^4.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "hugo server -D",
+    "build": "hugo",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeSteiner/alex-resume-hugo.git",
+  },
+  "author": "MikeSteiner",
+  "license": "MIT",
+  "homepage": "https://github.com/BulgarianKettlebells/workshop-2020"
+}
