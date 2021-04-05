@@ -18,8 +18,8 @@ fieldOfStudy:
   - label: Node.js
   - label: Angular 2
   - label: Data structures and algorithms
-  - label: ASP.NET MVC
   - label: ASP.NET WebForms
+  - label: ASP.NET MVC
 address:
   country: Bulgaria
   city: Sofia
