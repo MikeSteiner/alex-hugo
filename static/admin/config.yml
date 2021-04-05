@@ -133,19 +133,50 @@ collections:
           - { label: "Label", name: "label", widget: "string", required: true }
           - { label: "Skills", name: "skills", widget: "list", required: true }
 
-    ###########################################################################
-    # language Skills Section
+  ###########################################################################
+  # language Skills Section
 
-    ###########################################################################
-    # Personal Projects Section
+  ###########################################################################
+  # Personal Projects Section
 
-    ###########################################################################
-    # Achievements Section
+  ###########################################################################
+  # Achievements Section
+  - name: 'achievements'
+    label: 'Achievements'
+    label_singular: 'Achievements'
+    create: true
+    folder: 'content/achievements'
+    path: '{{slug}}/index'
+    media_folder: './'
+    public_folder: './'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Summary', name: 'summary', widget: 'string', required: false }
+      - { label: 'Weight', name: 'weight', widget: 'number', value_type: "int" }
+      - { label: 'Website', name: 'website', widget: 'string', required: false }
+      - label: Address
+        name: address
+        widget: object
+        fields:
+          - { label: "City", name: "city", widget: "string", required: false}
+          - { label: "Country", name: "country", widget: "string", required: true}
+      - label: Period
+        name: period
+        widget: object
+        fields:
+          - { label: "Start Date", name: "startDate", widget: "string", required: true}
+          - { label: "End Date", name: "endDate", widget: "string", required: false}
+      - label: 'AvatarImage'
+        name: 'avatarImage'
+        widget: 'object'
+        fields:
+          - { label: "Image", name: "image", widget: "image", required: true }
+          - { label: "Name", name: "alt", widget: "string", required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: true }
+  ###########################################################################
+  # Passions Section
 
-    ###########################################################################
-    # Passions Section
-
-    ###########################################################################
-    # Books Section
+  ###########################################################################
+  # Books Section
 
 
