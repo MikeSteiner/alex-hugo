@@ -2,7 +2,7 @@
 title: Start Engineering JSCo.
 department: Automation
 summary: Automation Engineer
-weight: 1
+weight: 7
 address:
   country: Bulgaria
   city: Sofia
