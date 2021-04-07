@@ -1,7 +1,7 @@
 ---
 title: Blubito AG
 summary: Software Developer / Angular 2+
-weight: 1
+weight: 3
 website: http://blubito.com
 responsibilities:
   - Software Developer
