@@ -2,7 +2,7 @@
 title: B.Braun Medical EOOD
 department: IT Sharing Center
 summary: Frontend Software Developer
-weight: 0
+weight: 2
 website: https://www.bbraun.bg
 responsibilities:
   - Angular developer
