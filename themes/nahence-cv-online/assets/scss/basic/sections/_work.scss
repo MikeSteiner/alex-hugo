@@ -3,7 +3,16 @@
 --------------------------------------------------------------*/
 #work {
 
-  .work-experience-card {
+  .work-list-container {
+    hr {
+      border-top: 1px dashed darkgray;
+    }
+    hr:last-of-type {
+      display: none;
+    }
+  }
+
+  .work-card {
     h4 {
       font-weight: bold;
     }
