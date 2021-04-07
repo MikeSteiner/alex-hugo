@@ -126,9 +126,11 @@ collections:
     public_folder: './'
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Department', name: 'department', widget: 'string', required: false }
       - { label: 'Summary', name: 'summary', widget: 'string', required: false }
       - { label: 'Weight', name: 'weight', widget: 'number', value_type: "int" }
       - { label: 'Website', name: 'website', widget: 'string', required: false }
+      - { label: "Responsibilities", name: "responsibilities", widget: "list", required: false }
       - label: Address
         name: address
         widget: object
@@ -146,7 +148,7 @@ collections:
         widget: 'object'
         required: false
         fields:
-          - { label: "Image", name: "image", widget: "image", required: true }
+          - { label: "Image", name: "image", widget: "image", required: false }
           - { label: "Name", name: "alt", widget: "string", required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: true }
 

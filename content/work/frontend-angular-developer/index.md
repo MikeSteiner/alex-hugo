@@ -1,5 +1,5 @@
 ---
-title: Kaufland Service
+title: Schwarz IT Bulgaria
 summary: Frontend Angular Developer
 weight: 1
 address:
