@@ -2,14 +2,31 @@
 # Achievement Data Section
 --------------------------------------------------------------*/
 #achievement {
+  .achievement-list-container {
+    hr {
+      border-top: 1px dashed darkgray;
+    }
+    hr:last-of-type {
+      display: none;
+    }
+  }
+
+  .achievement-icon {
+    color: #00a78e;
+  }
+
   .achievement-card {
     h4 {
       color: #1b242f;
-      //font-size: 1.2em;
-      //font-weight: 600;
-      i {
-        color: #00a78e;
-      }
+    }
+    h5 {
+      color: #00a78e;
+      font-weight: 600;
+    }
+
+    .content {
+      overflow-wrap: break-word;
+      width: 75%;
     }
   }
 }

@@ -1,0 +1,50 @@
+{{ $sectionName := "achievements" }}
+{{ $currentPage := (.Site.GetPage $sectionName) }}
+
+<!--Title-->
+<div class="section-head mb-4">
+    <h3 class="bottom-border">{{ $currentPage.Title | safeHTML }}</h3>
+</div>
+
+<!--Data-->
+<section class="d-flex flex-column">
+    {{ $sectionPages := (where .Site.RegularPages.ByTitle "Section" $sectionName) }}
+    {{ $sortBy := ".Params.weight" }}
+
+    <div class="mx-1 d-flex achievement-list-container">
+    {{ range sort $sectionPages $sortBy "asc" }}
+        <h4 class="pr-3 achievement-icon">
+            <i class="{{ .Params.faIcon }}"></i>
+        </h4>
+        <div class="achievement-card">
+            <div>
+                <h4>{{ .Title }}</h4>
+                <h5>{{ .Summary }}</h5>
+            </div>
+            <div class="d-flex flex-row">
+                <div class="mr-4">
+                    <i class="fa fa-calendar"></i>
+                    {{ with .Params.period }}
+                        <!-- If endDate is missing or is an empty string-->
+                        {{ $endDate := (cond (or (eq .endDate nil) (eq .endDate "")) "present" .endDate  ) }}
+                        <span>{{ .startDate }} - {{ $endDate }}</span>
+                    {{ end }}
+                </div>
+                <div>
+                    <i class="fa fa-location-arrow"></i>
+                    {{ with .Params.address }}
+                        <span>
+                            {{ .country }}
+                            {{ if .city }}, {{ .city }}{{ end }}
+                        </span>
+                    {{ end }}
+                </div>
+            </div>
+            <div class="mt-2 content">
+                {{ replace .Content "\\n" "<br/>" | safeHTML }}
+            </div>
+        </div>
+        <hr>
+    {{ end }}
+    </div>
+</section>

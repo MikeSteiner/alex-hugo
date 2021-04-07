@@ -172,6 +172,7 @@ collections:
         fields:
           - { label: "Image", name: "image", widget: "image", required: true }
           - { label: "Name", name: "alt", widget: "string", required: false }
+      - { label: 'FaIcon class name', name: 'faIcon', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: true }
   ###########################################################################
   # Passions Section
