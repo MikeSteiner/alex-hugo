@@ -2,7 +2,7 @@
 title: Start Engineering JSCo
 department: Automation
 summary: Industrial Automation-System Engineer
-weight: 1
+weight: 5
 address:
   country: Bulgaria
   city: Sofia
