@@ -1,6 +1,6 @@
 ---
-title: Frontend Angular Developer
-summary: Kaufland Service
+title: Kaufland Service
+summary: Frontend Angular Developer
 weight: 1
 address:
   country: Bulgaria
