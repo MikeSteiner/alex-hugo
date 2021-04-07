@@ -2,7 +2,7 @@
 title: ABB AG Vienna
 department: Power Generation
 summary: Software Engineer
-weight: 2
+weight: 4
 responsibilities:
   - SCADA developer
   - PLC programming
