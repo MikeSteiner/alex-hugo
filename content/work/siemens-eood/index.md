@@ -2,7 +2,7 @@
 title: SIEMENS EOOD
 department: Power
 summary: Technical Engineer
-weight: 1
+weight: 6
 address:
   country: Bulgaria
   city: Sofia
