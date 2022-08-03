@@ -1,0 +1,9 @@
+{{ with .Scratch.Get "location" }}
+    <div>
+        <i class="fa fa-location-arrow"></i>
+        <span>
+            {{ .country }}
+            {{ if .city }}, {{ .city }}{{ end }}
+        </span>
+    </div>
+{{ end }}

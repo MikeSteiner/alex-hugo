@@ -1,0 +1,8 @@
+{{ with .Scratch.Get "timeRange" }}
+    <div>
+        <i class="fa fa-calendar"></i>
+        <!-- If endDate is missing or is an empty string-->
+        {{ $endDate := (cond (or (eq .endDate nil) (eq .endDate "")) "present" .endDate  ) }}
+        <span>{{ .startDate }} - {{ $endDate }}</span>
+    </div>
+{{ end }}
