@@ -18,4 +18,4 @@ Worked for the Power Generation department as a PLC software developer and commi
 
 * Power Generation Department at ABB has a vast experience and\nknow-how in building Hydro Power Plants (HPPs) which offers many professional opportunities and challenges;
 * Involved in different project phases including custom library development, in-house design and testing (FATs with customers) and on-site commissioning (sometimes requires a couple of months to complete);
-* Small scripting applications in MS Office products for internal use and process evaluation."
+* Small scripting applications in MS Office products for internal use and process evaluation.
