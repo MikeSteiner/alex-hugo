@@ -1,6 +1,8 @@
 /*--------------------------------------------------------------
 # Education Section
 --------------------------------------------------------------*/
+@import "../../project_variables";
+
 #education {
   .education-list-container {
     hr {
@@ -13,21 +15,17 @@
 
   .education-card {
     h4 {
-      color: #1b242f;
+      color: $h4-title;
       font-weight: bold;
     }
 
     h5 {
-      color: #00a78e;
+      color: $h5-title;
       font-weight: 600;
     }
 
     img {
       width: 80%;
-    }
-
-    &-time-range {
-      margin-right: 1rem;
     }
   }
 }

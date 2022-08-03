@@ -13,7 +13,7 @@
 
     <div class="mx-1 d-flex achievement-list-container">
     {{ range sort $sectionPages $sortBy "asc" }}
-        <h4 class="pr-3 achievement-icon">
+        <h4 class="pe-3 achievement-icon">
             <i class="{{ .Params.faIcon }}"></i>
         </h4>
         <div class="achievement-card">
@@ -22,25 +22,20 @@
                 <h5>{{ .Summary }}</h5>
             </div>
             <div class="d-flex flex-row">
-                <div class="mr-4">
-                    <i class="fa fa-calendar"></i>
-                    {{ with .Params.period }}
-                        <!-- If endDate is missing or is an empty string-->
-                        {{ $endDate := (cond (or (eq .endDate nil) (eq .endDate "")) "present" .endDate  ) }}
-                        <span>{{ .startDate }} - {{ $endDate }}</span>
-                    {{ end }}
+
+                <!-- Time range badge -> 2020.01 - 2020.10 -->
+                <div class="me-3">
+                    {{ .Scratch.Set "timeRange" .Params.period }}
+                    {{ partial "shared/time-range-badge-base.html" . }}
                 </div>
+
+                <!-- Location badge -> Country, City-->
                 <div>
-                    <i class="fa fa-location-arrow"></i>
-                    {{ with .Params.address }}
-                        <span>
-                            {{ .country }}
-                            {{ if .city }}, {{ .city }}{{ end }}
-                        </span>
-                    {{ end }}
+                    {{ .Scratch.Set "location" .Params.address }}
+                    {{ partial "shared/location-badge-base.html" . }}
                 </div>
             </div>
-            <div class="mt-2 content">
+            <div class="mt-2 achievement-card-content">
                 {{ replace .Content "\\n" "<br/>" | safeHTML }}
             </div>
         </div>

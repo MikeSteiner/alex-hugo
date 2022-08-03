@@ -11,10 +11,6 @@
     }
   }
 
-  .achievement-icon {
-    color: #00a78e;
-  }
-
   .achievement-card {
     h4 {
       color: #1b242f;
@@ -24,9 +20,13 @@
       font-weight: 600;
     }
 
-    .content {
+    &-content {
       overflow-wrap: break-word;
       width: 75%;
     }
+  }
+
+  .achievement-icon {
+    color: #00a78e;
   }
 }

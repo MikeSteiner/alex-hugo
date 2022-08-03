@@ -1,6 +1,8 @@
 /*--------------------------------------------------------------
 # Work Experience Section
 --------------------------------------------------------------*/
+@import "../../project_variables";
+
 #work {
 
   .work-list-container {
@@ -24,7 +26,7 @@
     }
 
     h5 {
-      color: #00a78e;
+      color: $h5-title;
       font-weight: 600;
     }
 
