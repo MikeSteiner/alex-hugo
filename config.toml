@@ -1,6 +1,6 @@
 baseURL = "https://alex-resume-online.netlify.app/"
 languageCode = "en-us"
-title = "Alexander Online Resume"
+title = "Alexander Toplijski Online Resume"
 
 theme = ["nahence-cv-online"]
 
@@ -11,16 +11,24 @@ theme = ["nahence-cv-online"]
     favicon = "images/uploads/favicon.png"
     appleTouchIcon = "images/uploads/apple-touch-icon.png"
 
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
 # Module
-[module]
-  [[module.mounts]]
-  source = "static"
-  target = "static"
-
-  [[module.mounts]]
-  source = "node_modules/@fortawesome/fontawesome-free/webfonts"
-  target = "static/webfonts"
-
-  [[module.mounts]]
-  source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-  target = "assets/vendor/js/bootstrap.bundle.min.js"
+[[module.mounts]]
+    source = "images"
+    target = "content/uploads"
+[[module.mounts]]
+    source = "static"
+    target = "static"
+[[module.mounts]]
+    source = "node_modules/@fortawesome/fontawesome-free/webfonts"
+    target = "static/webfonts"
+[[module.mounts]]
+    source = "node_modules/bootstrap-icons/font/fonts"
+    target = "static/fonts"
+[[module.mounts]]
+    source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    target = "assets/vendor/js/bootstrap.bundle.min.js"

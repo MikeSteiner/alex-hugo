@@ -12,10 +12,13 @@
     gtag('config', 'G-VX7C2DVWVH');
 </script>
 
-<title>Online Resume</title>
+{{ $page := .Page.Params }}
+<title>{{ $page.pageTitle }}</title>
 
-<meta name="descriptison" content="Online Resume Description" />
-<meta name="keywords" content="Personal CV Online Resume" />
+<meta name="title" content="{{ $page.pageTitle }}">
+<meta name="descriptison" content="{{ $page.metaDescription }}" />
+<meta name="keywords" content="{{ $page.metaKeywords }}" />
+<meta name="robots" content="index, follow, all">
 
 <!-- Favicons -->
 {{ $logo := .Site.Params.logo }}

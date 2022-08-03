@@ -2,7 +2,7 @@
 {{ $bootstrap_bundle := resources.Get "vendor/js/bootstrap.bundle.min.js" }}
 
 <!--Vendor js imports direct resource inside assets-->
-<!--{{ $venobox := resources.Get "vendor/venobox/venobox.min.js" -}}-->
+<!--{{ $glightbox := resources.Get "vendor/glightbox/js/glightbox.min.js" -}}-->
 
 {{ $vendorsJs := slice $bootstrap_bundle | resources.Concat "js/vendors_bundle.js" | resources.Minify | resources.Fingerprint "md5" }}
 
